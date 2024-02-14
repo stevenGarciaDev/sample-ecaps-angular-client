@@ -1,4 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* Angular Material Custom Theme */
+
+@use '@angular/material' as mat;
+
+$my-primary: mat.define-palette(mat.$indigo-palette, 500);
+$my-accent: mat.define-palette(mat.$amber-palette, A200);
+
+// Create your theme
+$my-theme: mat.define-light-theme((
+  color: (
+    primary: $my-primary,
+    accent: $my-accent,
+  )
+));
+
+// Include the base styles and component themes
+@include mat.core();
+@include mat.all-component-themes($my-theme);
+
+/* Base styles */
 
 *,
 *::before,
@@ -6,5 +25,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text: #000000de;
+  --white-text: #fffffff2;
+  --background: #EEE;
+  --blue: #005a9b;
+  --yellow: #ffca28;
+}
+
 html, body { height: 100%; }
 body { font-size: 62.5%; margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

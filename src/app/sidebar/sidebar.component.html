@@ -1,0 +1,28 @@
+<mat-sidenav-container autosize>
+    <mat-sidenav mode="side" #sidenav opened class="sidenav" [ngClass]="{'sidenav-open': isOpen, 'sidenav-closed': !isOpen }">
+        <div class="button-container">
+            <button mat-mini-fab matTooltip="{{ !isOpen ? 'Expand Menu' : '' }}" matTooltipPosition="below" (click)="toggleSidebar()">
+                <mat-icon *ngIf="!isOpen">arrow_forward_ios</mat-icon>
+                <mat-icon *ngIf="isOpen">arrow_backward_ios</mat-icon>
+            </button>
+            <span *ngIf="isOpen" class="collapse-sidebar-text">Close Sidebar</span>
+        </div>
+        <div class="nav-items" [ngClass]="{'nav-items': true, 'nav-items-expanded': isOpen }">
+            <div class="nav-item">
+                <mat-icon class="nav-item-icon" matTooltip="{{ !isOpen ? 'Equipment Schedule' : '' }}" matTooltipPosition="below">list_alt</mat-icon>
+                <span *ngIf="isOpen" class="nav-item-text">Equipment Schedule</span>
+            </div>
+            <div class="nav-item">
+                <mat-icon class="nav-item-icon" matTooltip="{{ !isOpen ? 'Jobs' : '' }}" matTooltipPosition="below">assignment</mat-icon>
+                <span *ngIf="isOpen" class="nav-item-text">Jobs</span>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content [style.marginLeft.px]="isOpen ? 250 : 60">
+        <mat-toolbar>eCaps Sample Project</mat-toolbar>
+        <main>
+            <h1>Sample</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatibus perspiciatis assumenda ullam culpa impedit porro ipsum, quae fuga sequi earum sit voluptas? Quidem eius fugit quaerat aliquam ipsa ratione.</p>
+        </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
