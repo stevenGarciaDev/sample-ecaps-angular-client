@@ -19,10 +19,14 @@
         </div>
     </mat-sidenav>
     <mat-sidenav-content [style.marginLeft.px]="isOpen ? 250 : 60">
-        <mat-toolbar>eCaps Sample Project</mat-toolbar>
+        <mat-toolbar>
+            <div>eCaps Sample Project</div>
+            <div>
+                <div class="mat-toolbar-title"><a href="https://www.linkedin.com/in/stevengarciadev/" target="_blank">Steven Garcia | Application Engineer Applicant</a></div>
+            </div>
+        </mat-toolbar>
         <main>
-            <h1>Sample</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptatibus perspiciatis assumenda ullam culpa impedit porro ipsum, quae fuga sequi earum sit voluptas? Quidem eius fugit quaerat aliquam ipsa ratione.</p>
+            <router-outlet></router-outlet>
         </main>
     </mat-sidenav-content>
 </mat-sidenav-container>

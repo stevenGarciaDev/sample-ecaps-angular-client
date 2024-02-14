@@ -1,0 +1,38 @@
+.home-container {
+    padding: 14px;
+}
+
+.card-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(228px, 1fr));
+}
+
+mat-card {
+    cursor: pointer;
+    min-height: 228px;
+    min-width: 228px;
+}
+
+mat-card-header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+mat-card-title {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.mat-icon {
+    cursor: pointer;
+}
+
+img {
+    object-fit: scale-down;
+    width: 100%;
+    padding: 20px;
+}

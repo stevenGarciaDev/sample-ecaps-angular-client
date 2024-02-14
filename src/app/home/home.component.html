@@ -1,0 +1,34 @@
+<div class="home-container">
+
+    <div class="card-container">
+        <mat-card *ngFor="let product of products" class="product-category">
+            <mat-card-header>
+                <mat-card-title>{{ product.name }}</mat-card-title>
+                <mat-icon *ngIf="product.hasExcelSheet" role="img" svgicon="excel" matTooltip="Select and Schedule" class="mat-icon notranslate mat-mdc-tooltip-trigger no-revit mat-icon-no-color ng-star-inserted" aria-hidden="true" data-mat-icon-type="svg" data-mat-icon-name="excel" aria-describedby="cdk-describedby-message-ng-1-5" cdk-describedby-host="ng-1"><svg version="1.1" id="Excel_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false">
+                    <style type="text/css">
+                        .st0{fill:none;stroke:#01723B;stroke-width:0.75;stroke-linejoin:round;stroke-miterlimit:10;}
+                        .st1{fill:#01723B;}
+                    </style>
+                    <g id="Grid">
+                        <rect id="Border" x="11.55" y="4.51" class="st0" width="9.93" height="14.84"></rect>
+                        <rect x="16.33" y="6.19" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="12.25" y="6.19" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="16.33" y="8.66" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="12.25" y="8.66" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="16.33" y="11.13" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="12.25" y="11.13" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="16.33" y="13.6" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="12.25" y="13.6" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="16.33" y="16.08" class="st1" width="3.15" height="1.55"></rect>
+                        <rect x="12.25" y="16.08" class="st1" width="3.15" height="1.55"></rect>
+                    </g>
+                    <path id="X_Block" class="st1" d="M1.97,4.17v15.77l11.69,1.99V2.13L1.97,4.17z M8.64,15.63l-1.14-2.79l-1.11,2.6l-1.53,0L6.65,12
+                        L5.08,8.5l1.5-0.01l0.95,2.49l1.15-2.68l1.48-0.01l-1.8,3.62l1.88,3.71L8.64,15.63z"></path>
+                    </svg></mat-icon>
+            </mat-card-header>
+            <mat-card-content>
+                <img src="{{ product.imageUrl }}" alt="{{ product.name }}" class="product-image">
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

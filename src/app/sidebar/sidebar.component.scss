@@ -4,7 +4,24 @@ mat-toolbar {
     background: #fafafa;
     border-bottom: 1.5px solid #a7a7a7;
     color: var(--blue);
+    display: flex;
+    flex-direction: row;
     height: $toolbar-height;
+    justify-content: space-between;
+}
+
+.mat-toolbar-title {
+    color: var(--text);
+    font-size: 16px;
+
+    a {
+        color: var(--text);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 mat-sidenav {
