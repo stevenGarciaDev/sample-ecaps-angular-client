@@ -1,5 +1,11 @@
 # SampleEcapsAngularClient
 
+This is a sample application built in Angular based on Greenheck's eCaps web product.
+
+The purpose is to further demonstrate my skills in Angular, JavaScript (TypeScript), and Angular Material.
+
+The deployed application can be found at the following URL, [https://sample-ecaps-project.netlify.app/].
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
 
 ## Development server
