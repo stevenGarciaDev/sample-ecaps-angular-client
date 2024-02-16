@@ -11,11 +11,17 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { NgModule } from '@angular/core';
+import { RegisterComponent } from './register/register.component';
 import { RouterModule } from '@angular/router';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    RegisterComponent,
+    SidebarComponent,
+  ],
   imports: [
     CommonModule,
     BrowserModule,
