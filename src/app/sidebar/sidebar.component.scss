@@ -64,6 +64,11 @@ mat-sidenav-content.content-collapsed {
     justify-content: center;
 }
 
+.expand-button {
+    background-color: var(--yellow);
+    color: black;
+}
+
 .nav-items {
     align-items: center;
     display: flex;

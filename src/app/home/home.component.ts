@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatCardModule, MatCardTitle } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-home',

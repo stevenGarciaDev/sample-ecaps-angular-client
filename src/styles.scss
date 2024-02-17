@@ -1,25 +1,5 @@
-/* Angular Material Custom Theme */
-
-@use '@angular/material' as mat;
-
-$my-primary: mat.define-palette(mat.$indigo-palette, 500);
-$my-accent: mat.define-palette(mat.$amber-palette, A200);
 $mobile-breakpoint: 600px;
 $tablet-breakpoint: 900px;
-
-// Create your theme
-$my-theme: mat.define-light-theme((
-  color: (
-    primary: $my-primary,
-    accent: $my-accent,
-  )
-));
-
-// Include the base styles and component themes
-@include mat.core();
-@include mat.all-component-themes($my-theme);
-
-/* Base styles */
 
 *,
 *::before,

@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { appRoutes } from '../routes';
 
 @Component({
   selector: 'app-root',
